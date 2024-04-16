@@ -32,4 +32,37 @@ fn main(){
     let a = 0b0101;     // 5 в десятичной системе
     let a = 0o11;       // 9 в десятичной системе
     let a = 0xA1;       // 161 в десятичной системе
+
+    let a: f32 = 2.04;
+    println!("a: {}", a);
+    let b: f64  = 100.080973;
+    println!("b: {}", b);
+    let c  = -45.78;            // тип f64
+    println!("c: {}", c);
+
+    let a: bool = true;
+    println!("a: {}", a);
+    let b = false;
+    println!("b: {}", b);
+
+    let a: char = 'a';
+    println!("a: {}", a);
+    let b = 'b';        // тип char
+    println!("b: {}", b);
+
+    let a: &str = "hello";
+    println!("a: {}", a);
+    let b = "Rust";     // тип &str
+    println!("b: {}", b);
+
+    let hello_world: String = String::from("Hello World!");
+    // можно без ": &str", let hello_world = String::from("Hello World!");
+    println!("{}", hello_world);
+
+    //или если надо просто пустую строку:
+    let empty_string: String = String::new();
+
+    let mut number = 12;
+    number /= 5;
+    println!("{}", number);
 }
